@@ -1,6 +1,7 @@
 from datetime import datetime
 
 def _get_menu():
+    print('\n\n\n')
     print('                          +========================================+')
     print('                          |                  MENU                  |')
     print('                          +========================================+')
@@ -12,6 +13,7 @@ def _get_menu():
     print('                          |   6.- ELIMINAR PASAJE                  |')
     print('                          |   7.- SALIR                            |')
     print('                          +========================================+')
+    print('\n')
 
 
 def _get_list_detinity(index=0,isReturn=False):
@@ -27,8 +29,7 @@ def _get_list_detinity(index=0,isReturn=False):
         ['PIURA','100','23:15','05:00'],
         ['SULLANA','80','20:00','07:00'],
         ['TALARA','70','17:00','06:00'],
-        ['TRUJILLO','100','20:30','06:00'],
-        ['TUMBES','120','21:00','07:00']
+        ['TRUJILLO','100','20:30','06:00']
     ]
 
     if isReturn != False:
