@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def _add_tickets(correlative, type_ticket, _destinity):
+def _add_tickets(correlative, type_ticket, _destinity, _seat):
         now = datetime.now()
         today = str(now.day) + '/' + str(now.month) + '/' + str(now.year)
         lastDay = str(now.day+1) + '/' + str(now.month) + '/' + str(now.year)
@@ -12,7 +12,7 @@ def _add_tickets(correlative, type_ticket, _destinity):
         destinity = _destinity[0]
         cost = _destinity[1]
         type_ticket = type_ticket
-        seat = input('Ingrese Asiento del Pasajero: ')
+        seat = _seat
         date_init = today
         hour_init = _destinity[2]
         date_end = lastDay

@@ -17,15 +17,17 @@ while True:
         menu._get_list_detinity()
         id_destinity = int(input('                                          Ingrese el destino:'))
         destinity = menu._get_list_detinity(id_destinity,True)
-        data.append(tickets.add_tickets._add_tickets(len(data) + 1,'PASAJE',destinity))
-        
+        menu._get_list_seat()
+        id_seat = input('                                          Ingrese el asiento:')
+        data.append(tickets.add_tickets._add_tickets(len(data) + 1,'PASAJE',destinity,id_seat))
         input('Presione enter para continuar...')
     elif option == '4':
         menu._get_list_detinity()
         id_destinity = int(input('                                          Ingrese el destino:'))
         destinity = menu._get_list_detinity(id_destinity,True)
-        data.append(tickets.add_tickets._add_tickets(len(data) + 1,'RESERVA',destinity))
-        
+        menu._get_list_seat()
+        id_seat = input('                                          Ingrese el asiento:')
+        data.append(tickets.add_tickets._add_tickets(len(data) + 1,'PAQUETE',destinity,id_seat))
         input('Presione enter para continuar...')
     elif option == '5':
         tickets.list_tickets._list_ticket(data)

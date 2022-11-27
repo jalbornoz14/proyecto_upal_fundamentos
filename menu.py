@@ -46,5 +46,21 @@ def _get_list_detinity(index=0,isReturn=False):
             print('                    {0}{1:5} {0} {2:19} {0} S/.{3:5} {0} {4:10} {5:5} {0} {6:10} {7:5} |'.format('|',i+1, destinitys[i][0],destinitys[i][1],today,destinitys[i][2],lastDay,destinitys[i][3]))
     print('                    +=============================================================================+')
 
-
+def _get_list_seat(index=0,isReturn=False):
+    print('                                        +=========================+')
+    print('                                        |   ASIENTOS DISPONIBLES  |')
+    print('                                        +=========================+')
+    print('                                        | FA | FB | --- | FC | FD |')
+    print('                                        +_________________________+')
+    print('                                        | 01 | 02 | --- | 03 | 04 |')
+    print('                                        | 05 | 06 | --- | 07 | 08 |')
+    print('                                        | 09 | 10 | ---           |')
+    print('                                        | 11 | 12 | --- | 13 | 14 |')
+    print('                                        | 15 | 16 | --- | 17 | 18 |')
+    print('                                        | 19 | 20 | --- | 21 | 22 |')
+    print('                                        | 23 | 24 | --- | 25 | 26 |')
+    print('                                        | 27 | 28 | --- | 29 | 30 |')
+    print('                                        | 31 | 32 | --- | 33 | 34 |')
+    print('                                        | 35 | 36 | --- | 37 | 38 |')
+    print('                                        +=========================+')
 
